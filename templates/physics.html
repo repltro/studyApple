@@ -4,6 +4,7 @@
 
 {% block content %}
 <h1>A-Level Physics Topics</h1>
+
 <div class="accordion" id="accordionPhysics">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
@@ -17,6 +18,7 @@
           <li><a href="#mechanics">Mechanics</a></li>
           <li><a href="#waves">Waves</a></li>
           <li><a href="#electricity">Electricity</a></li>
+          <li><a href="{{ url_for('physics_quiz') }}">Take the Quiz</a></li>
         </ul>
       </div>
     </div>
@@ -31,8 +33,9 @@
       <div class="accordion-body">
         <ul>
           <li><a href="#thermodynamics">Thermodynamics</a></li>
-          <li><a href="#magnetic-fields">Magnetic Fields</a></li>
+          <li><a href="#fields">Fields</a></li>
           <li><a href="#nuclear-physics">Nuclear Physics</a></li>
+          <li><a href="{{ url_for('physics_quiz') }}">Take the Quiz</a></li>
         </ul>
       </div>
     </div>

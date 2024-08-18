@@ -4,6 +4,7 @@
 
 {% block content %}
 <h1>A-Level Computer Science Topics</h1>
+
 <div class="accordion" id="accordionCS">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
@@ -14,9 +15,10 @@
     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionCS">
       <div class="accordion-body">
         <ul>
-          <li><a href="#programming-basics">Programming Basics</a></li>
-          <li><a href="#data-structures">Data Structures</a></li>
+          <li><a href="#programming">Programming</a></li>
           <li><a href="#algorithms">Algorithms</a></li>
+          <li><a href="#data-structures">Data Structures</a></li>
+          <li><a href="{{ url_for('cs_quiz') }}">Take the Quiz</a></li>
         </ul>
       </div>
     </div>
@@ -30,15 +32,15 @@
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionCS">
       <div class="accordion-body">
         <ul>
-          <li><a href="#advanced-programming">Advanced Programming</a></li>
-          <li><a href="#machine-learning">Machine Learning</a></li>
-          <li><a href="#computer-systems">Computer Systems</a></li>
+          <li><a href="#networks">Networks</a></li>
+          <li><a href="#databases">Databases</a></li>
+          <li><a href="#software-engineering">Software Engineering</a></li>
+          <li><a href="{{ url_for('cs_quiz') }}">Take the Quiz</a></li>
         </ul>
       </div>
     </div>
   </div>
 </div>
-
 <hr>
 
 <h2 id="programming-basics">Programming Basics</h2>

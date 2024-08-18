@@ -1,0 +1,111 @@
+<!-- templates/math_quiz.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Math Quiz</h2>
+<form method="POST" action="{{ url_for('earn_xp', xp_amount=10) }}">
+    <div class="form-group">
+        <label for="q1">1. What is 2 + 2?</label>
+        <select class="form-control" id="q1" name="q1">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q2">2. What is 5 x 3?</label>
+        <select class="form-control" id="q2" name="q2">
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+        </select>
+    </div>
+
+    <!-- Additional questions... -->
+
+    <div class="form-group">
+        <label for="q3">3. What is 12 / 4?</label>
+        <select class="form-control" id="q3" name="q3">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q4">4. What is 7 + 8?</label>
+        <select class="form-control" id="q4" name="q4">
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q5">5. What is 9 x 6?</label>
+        <select class="form-control" id="q5" name="q5">
+            <option value="48">48</option>
+            <option value="54">54</option>
+            <option value="56">56</option>
+            <option value="64">64</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q6">6. What is 100 - 45?</label>
+        <select class="form-control" id="q6" name="q6">
+            <option value="45">45</option>
+            <option value="55">55</option>
+            <option value="65">65</option>
+            <option value="75">75</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q7">7. What is 25 / 5?</label>
+        <select class="form-control" id="q7" name="q7">
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q8">8. What is the square root of 81?</label>
+        <select class="form-control" id="q8" name="q8">
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q9">9. What is 8 x 7?</label>
+        <select class="form-control" id="q9" name="q9">
+            <option value="54">54</option>
+            <option value="56">56</option>
+            <option value="58">58</option>
+            <option value="60">60</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q10">10. What is 13 + 6?</label>
+        <select class="form-control" id="q10" name="q10">
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Quiz</button>
+</form>
+{% endblock %}

@@ -1,0 +1,111 @@
+<!-- templates/physics_quiz.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Physics Quiz</h2>
+<form method="POST" action="{{ url_for('earn_xp', xp_amount=15) }}">
+    <div class="form-group">
+        <label for="q1">1. What is the speed of light in a vacuum?</label>
+        <select class="form-control" id="q1" name="q1">
+            <option value="300000">300,000 km/s</option>
+            <option value="150000">150,000 km/s</option>
+            <option value="299792">299,792 km/s</option>
+            <option value="250000">250,000 km/s</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q2">2. Who formulated the laws of motion?</label>
+        <select class="form-control" id="q2" name="q2">
+            <option value="einstein">Albert Einstein</option>
+            <option value="newton">Isaac Newton</option>
+            <option value="galileo">Galileo Galilei</option>
+            <option value="tesla">Nikola Tesla</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q3">3. What is the unit of force?</label>
+        <select class="form-control" id="q3" name="q3">
+            <option value="joule">Joule</option>
+            <option value="newton">Newton</option>
+            <option value="watt">Watt</option>
+            <option value="pascal">Pascal</option>
+        </select>
+    </div>
+
+    <!-- Additional questions... -->
+
+    <div class="form-group">
+        <label for="q4">4. What is the acceleration due to gravity on Earth?</label>
+        <select class="form-control" id="q4" name="q4">
+            <option value="8.8">8.8 m/s²</option>
+            <option value="9.8">9.8 m/s²</option>
+            <option value="10.8">10.8 m/s²</option>
+            <option value="11.8">11.8 m/s²</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q5">5. What is the energy of a photon dependent on?</label>
+        <select class="form-control" id="q5" name="q5">
+            <option value="speed">Its speed</option>
+            <option value="wavelength">Its wavelength</option>
+            <option value="mass">Its mass</option>
+            <option value="volume">Its volume</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q6">6. Which of the following is a scalar quantity?</label>
+        <select class="form-control" id="q6" name="q6">
+            <option value="velocity">Velocity</option>
+            <option value="force">Force</option>
+            <option value="energy">Energy</option>
+            <option value="momentum">Momentum</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q7">7. What is the first law of thermodynamics concerned with?</label>
+        <select class="form-control" id="q7" name="q7">
+            <option value="energy_conservation">Energy conservation</option>
+            <option value="entropy">Entropy</option>
+            <option value="force">Force</option>
+            <option value="power">Power</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q8">8. What is the SI unit of temperature?</label>
+        <select class="form-control" id="q8" name="q8">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+            <option value="rankine">Rankine</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q9">9. What is the primary cause of Earth's magnetic field?</label>
+        <select class="form-control" id="q9" name="q9">
+            <option value="atmosphere">Earth's atmosphere</option>
+            <option value="core">Movements in Earth's core</option>
+            <option value="sun">The Sun's rays</option>
+            <option value="rotation">Earth's rotation</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q10">10. What is the principle of conservation of momentum?</label>
+        <select class="form-control" id="q10" name="q10">
+            <option value="mass">Mass is conserved in an isolated system</option>
+            <option value="force">Force is conserved in an isolated system</option>
+            <option value="momentum">Momentum is conserved in an isolated system</option>
+            <option value="velocity">Velocity is conserved in an isolated system</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Quiz</button>
+</form>
+{% endblock %}

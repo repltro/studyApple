@@ -1,0 +1,111 @@
+<!-- templates/cs_quiz.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Computer Science Quiz</h2>
+<form method="POST" action="{{ url_for('earn_xp', xp_amount=20) }}">
+    <div class="form-group">
+        <label for="q1">1. What does HTML stand for?</label>
+        <select class="form-control" id="q1" name="q1">
+            <option value="hypertext">Hyper Text Markup Language</option>
+            <option value="hyperlink">Hyperlink Text Markup Language</option>
+            <option value="home">Home Tool Markup Language</option>
+            <option value="hightext">High Text Markup Language</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q2">2. What is the time complexity of binary search?</label>
+        <select class="form-control" id="q2" name="q2">
+            <option value="o1">O(1)</option>
+            <option value="ologn">O(log n)</option>
+            <option value="on">O(n)</option>
+            <option value="on2">O(n^2)</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q3">3. Which language is primarily used for Android app development?</label>
+        <select class="form-control" id="q3" name="q3">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="swift">Swift</option>
+            <option value="csharp">C#</option>
+        </select>
+    </div>
+
+    <!-- Additional questions... -->
+
+    <div class="form-group">
+        <label for="q4">4. What is a primary key in a database?</label>
+        <select class="form-control" id="q4" name="q4">
+            <option value="unique">A unique identifier for a record</option>
+            <option value="foreign">A reference to a primary key in another table</option>
+            <option value="index">An index for fast retrieval</option>
+            <option value="key">A key for encryption</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q5">5. Which of the following is a NoSQL database?</label>
+        <select class="form-control" id="q5" name="q5">
+            <option value="mysql">MySQL</option>
+            <option value="postgresql">PostgreSQL</option>
+            <option value="mongodb">MongoDB</option>
+            <option value="oracle">Oracle</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q6">6. What does CSS stand for?</label>
+        <select class="form-control" id="q6" name="q6">
+            <option value="cascading">Cascading Style Sheets</option>
+            <option value="computer">Computer Style Sheets</option>
+            <option value="creative">Creative Style Sheets</option>
+            <option value="common">Common Style Sheets</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q7">7. Which of the following is a programming paradigm?</label>
+        <select class="form-control" id="q7" name="q7">
+            <option value="oop">Object-oriented programming</option>
+            <option value="html">HTML</option>
+            <option value="xml">XML</option>
+            <option value="json">JSON</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q8">8. What is the purpose of a constructor in a class?</label>
+        <select class="form-control" id="q8" name="q8">
+            <option value="initialize">To initialize objects of the class</option>
+            <option value="destroy">To destroy objects of the class</option>
+            <option value="inherit">To inherit properties</option>
+            <option value="none">None of the above</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q9">9. What does API stand for?</label>
+        <select class="form-control" id="q9" name="q9">
+            <option value="application">Application Programming Interface</option>
+            <option value="applied">Applied Programming Interface</option>
+            <option value="access">Access Programming Interface</option>
+            <option value="action">Action Programming Interface</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="q10">10. What is Git used for?</label>
+        <select class="form-control" id="q10" name="q10">
+            <option value="version">Version control</option>
+            <option value="editing">Editing code</option>
+            <option value="debugging">Debugging code</option>
+            <option value="testing">Testing code</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Quiz</button>
+</form>
+{% endblock %}
