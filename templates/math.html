@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}A-Level Mathematics{% endblock %}
+
+{% block content %}
+<h1>A-Level Mathematics Topics</h1>
+<div class="accordion" id="accordionMath">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Year 12 Topics
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionMath">
+      <div class="accordion-body">
+        <ul>
+          <li><a href="#algebra-functions">Algebra and Functions</a></li>
+          <li><a href="#coordinate-geometry">Coordinate Geometry</a></li>
+          <li><a href="#differentiation">Differentiation</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Year 13 Topics
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionMath">
+      <div class="accordion-body">
+        <ul>
+          <li><a href="#further-trigonometry">Further Trigonometry</a></li>
+          <li><a href="#further-calculus">Further Calculus</a></li>
+          <li><a href="#vectors">Vectors</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h2 id="algebra-functions">Algebra and Functions</h2>
+<p>Details about Algebra and Functions...</p>
+
+<h2 id="coordinate-geometry">Coordinate Geometry</h2>
+<p>Details about Coordinate Geometry...</p>
+
+<h2 id="differentiation">Differentiation</h2>
+<p>Details about Differentiation...</p>
+
+<h2 id="further-trigonometry">Further Trigonometry</h2>
+<p>Details about Further Trigonometry...</p>
+
+<h2 id="further-calculus">Further Calculus</h2>
+<p>Details about Further Calculus...</p>
+
+<h2 id="vectors">Vectors</h2>
+<p>Details about Vectors...</p>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}A-Level Physics{% endblock %}
+
+{% block content %}
+<h1>A-Level Physics Topics</h1>
+<div class="accordion" id="accordionPhysics">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Year 12 Topics
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionPhysics">
+      <div class="accordion-body">
+        <ul>
+          <li><a href="#mechanics">Mechanics</a></li>
+          <li><a href="#waves">Waves</a></li>
+          <li><a href="#electricity">Electricity</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Year 13 Topics
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionPhysics">
+      <div class="accordion-body">
+        <ul>
+          <li><a href="#thermodynamics">Thermodynamics</a></li>
+          <li><a href="#magnetic-fields">Magnetic Fields</a></li>
+          <li><a href="#nuclear-physics">Nuclear Physics</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h2 id="mechanics">Mechanics</h2>
+<p>Details about Mechanics...</p>
+
+<h2 id="waves">Waves</h2>
+<p>Details about Waves...</p>
+
+<h2 id="electricity">Electricity</h2>
+<p>Details about Electricity...</p>
+
+<h2 id="thermodynamics">Thermodynamics</h2>
+<p>Details about Thermodynamics...</p>
+
+<h2 id="magnetic-fields">Magnetic Fields</h2>
+<p>Details about Magnetic Fields...</p>
+
+<h2 id="nuclear-physics">Nuclear Physics</h2>
+<p>Details about Nuclear Physics...</p>
+{% endblock %}

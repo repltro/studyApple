@@ -1,0 +1,145 @@
+/* Ensure html and body take up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Container to ensure the footer is at the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content wrapper */
+.main-content {
+    flex: 1;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1a2235; /* Dark background */
+    color: #d3d7da; /* Light text color */
+    padding: 20px;
+    text-align: center;
+}
+
+/* General styling */
+body {
+    font-family: 'SF Pro', sans-serif;
+    background-color: #f4f6f9; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+/* Header styling */
+header {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text color */
+    padding: 10px;
+    text-align: center;
+}
+
+header a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    padding: 10px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Container styling */
+.container {
+    background: #fff; /* White background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Accordion styling */
+.accordion-button {
+    background-color: #f8f9fa; /* Light background */
+    color: #333; /* Dark text color */
+    border: 1px solid #dee2e6;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e9ecef; /* Slightly darker background */
+    color: #333; /* Dark text color */
+}
+
+.accordion-body {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color */
+    border: 1px solid #dee2e6;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #007bff; /* Blue background */
+    padding: 10px;
+}
+
+.navbar a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: #0056b3; /* Darker blue background */
+    border-radius: 4px;
+}
+
+/* Form styling */
+form {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form input,
+form button {
+    margin-bottom: 10px;
+}
+
+input,
+button {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color */
+}
+
+button {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue background */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .accordion-button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}A-Level Computer Science{% endblock %}
+
+{% block content %}
+<h1>A-Level Computer Science Topics</h1>
+<div class="accordion" id="accordionCS">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Year 12 Topics
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionCS">
+      <div class="accordion-body">
+        <ul>
+          <li><a href="#programming-basics">Programming Basics</a></li>
+          <li><a href="#data-structures">Data Structures</a></li>
+          <li><a href="#algorithms">Algorithms</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Year 13 Topics
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionCS">
+      <div class="accordion-body">
+        <ul>
+          <li><a href="#advanced-programming">Advanced Programming</a></li>
+          <li><a href="#machine-learning">Machine Learning</a></li>
+          <li><a href="#computer-systems">Computer Systems</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h2 id="programming-basics">Programming Basics</h2>
+<p>Details about Programming Basics...</p>
+
+<h2 id="data-structures">Data Structures</h2>
+<p>Details about Data Structures...</p>
+
+<h2 id="algorithms">Algorithms</h2>
+<p>Details about Algorithms...</p>
+
+<h2 id="advanced-programming">Advanced Programming</h2>
+<p>Details about Advanced Programming...</p>
+
+<h2 id="machine-learning">Machine Learning</h2>
+<p>Details about Machine Learning...</p>
+
+<h2 id="computer-systems">Computer Systems</h2>
+<p>Details about Computer Systems...</p>
+{% endblock %}
